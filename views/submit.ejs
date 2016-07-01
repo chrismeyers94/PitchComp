@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Submission Form</title>
+
+    <!-- Bootstrap -->
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!--plugins-->
+    <link href="/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/bower_components/flexslider/flexslider.css" rel="stylesheet">
+    <link href="/bower_components/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <link href="/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="/owl-carousel/owl.theme.css" rel="stylesheet">
+    <link href="/owl-carousel/owl.transitions.css" rel="stylesheet">
+    <link href="/et-line-icons/style.css" rel="stylesheet">
+    <link href="/css/style.css" rel="stylesheet">
+    <link rel="STYLESHEET" type="text/css" href="/css/contact.css">
+    <link href="/css/animate.css" rel="stylesheet">
+
+    <!--custom css file <link rel="STYLESHEET" type="text/css" href="contact.css" />-->
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+            .modalDialog {
+                position: fixed;
+                vertical-align: middle;
+                font-family: Arial, Helvetica, sans-serif;
+                top: 0;
+                right: 0;
+                bottom: 0;
+
+                left: 0;
+
+                z-index: 99999;
+                opacity:0;
+                -webkit-transition: opacity 400ms ease-in;
+                -moz-transition: opacity 400ms ease-in;
+                transition: opacity 400ms ease-in;
+                pointer-events: none;
+            }
+
+            .modalDialog:target {
+                opacity:1;
+                pointer-events: auto;
+            }
+
+            .modalDialog > div {
+                width: 400px;
+                position: relative;
+
+
+                margin: 30% auto;
+                padding: 5px 20px 13px 20px;
+                border-radius: 10px;
+                border-color: black;
+                background: grey;
+                background: -moz-linear-gradient(whitesmoke, #62B6E4);
+                background: -webkit-linear-gradient(whitesmoke, #62B6E4);
+                background: -o-linear-gradient(whitesmoke, #62B6E4);
+            }
+
+            .close {
+                background: #606061;
+                color: #FFFFFF;
+                line-height: 25px;
+                position: absolute;
+                right: -12px;
+                text-align: center;
+                top: -10px;
+                width: 24px;
+                text-decoration: none;
+                font-weight: bold;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                border-radius: 12px;
+                -moz-box-shadow: 1px 1px 3px #000;
+                -webkit-box-shadow: 1px 1px 3px #000;
+                box-shadow: 1px 1px 3px #000;
+            }
+
+            .close:hover { background: black; }
+        </style>
+</head>
+<body data-spy="scroll">
+<!-- Static navbar -->
+<nav class="navbar header-v1 header-transparent navbar-default navbar-fixed-top">
+    <div class="container" style="opacity: 1">
+        <div class="navbar-header scroll-to">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+
+            <ul class="nav scroll-to navbar-nav ">
+                <li> <a style="left: -100px" href="http://www.elevate.blue/"><img src="https://media.licdn.com/media/AAEAAQAAAAAAAAS-AAAAJDI4MTJkM2M2LTRiMWUtNDAzZi04MDE0LTQ3N2E1N2M0MjY4Yw.png" height="50" width="150" ></a></li>
+            </ul>
+            <ul class="nav scroll-to navbar-nav ">
+                <li class="active"><a href="/">Home</a></li>
+                <li><a  href="/#features">About</a></li>
+                <li><a href="/#pricing">Timeline</a></li>
+                <li><a href="/submit">Submit</a></li>
+
+            </ul>
+
+        </div><!--/.nav-collapse -->
+
+    </div><!--/.container-fluid -->
+</nav><!--navigation end here-->
+
+
+
+
+<div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="row">
+                <div class="col-sm-12 margin-b-20" style="margin-top: 125px;padding: 10px 0px 10px 0px;">
+                    <h1 style="color:#62B6E4;padding: 15px;text-align: center">Submission Form</h1>
+                    <h2  style="black;padding: 15px">Name</h2>
+                    <input type="text" id="member"  class="form-control" style="width: 750px;margin: 0 auto;" placeholder="Names" />
+                </div>
+                <div class="col-sm-12 margin-b-20" style="padding: 10px 0px 10px 0px;">
+
+                    <h2  style="black;padding: 15px">Partners</h2>
+                    <input type="text" id="partner"  class="form-control" style="width: 750px;margin: 0 auto;" placeholder="Names" />
+                </div>
+                <div class="col-sm-12 margin-b-20" style="padding: 10px 0px 10px 0px;">
+                    <h2  style="black;padding: 15px">Email</h2>
+                    <input id="email" type="text"  class="form-control" style="width: 750px;margin: 0 auto;" placeholder="Email Address" />
+                </div>
+                <div class="col-sm-12 margin-b-20" style="padding: 10px 0px 10px 0px;">
+                    <h2 style="black;padding: 15px">Phone</h2>
+                    <input type="text" id="phone"  class="form-control" style="width: 750px;margin: 0 auto;" placeholder="Phone Number" />
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 10px 0px;">
+            <h2 style="color:#62B6E4;padding: 15px"><a href="#problemModal" >Problem</a></h2>
+            <textarea id="problem"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="Identify your customers top problems"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 10px 0px;">
+            <h2 style="color:#62B6E4;padding: 15px"><a href="#custModal" >Customers</a></h2>
+            <textarea id="cust"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="Identify your target customers and users"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 10px 0px;">
+            <h2 style="color:#62B6E4;padding: 15px"><a href="#valModal" >Unique Value Proposition</a></h2>
+            <textarea id="value"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="What are you offering and what makes you different"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 10px 0px;">
+            <h2 style="color:#62B6E4;padding: 15px"><a href="#solModal" >Solution</a></h2>
+            <textarea id="solution"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="Identify the solution for each problem"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding:10px 0px 10px 0px;">
+<h2 style="color:#62B6E4;padding: 15px"><a href="#chanModal" >Channels</a></h2>
+            <textarea id="channels"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="How will you reach your customers"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 10px 0px;">
+            <h2 style="color:#62B6E4;padding: 15px"><a href="#revModal" >Revenue</a></h2>
+            <textarea id="revenue"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="Identify revenue sources"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 10px 0px;">
+<h2 style="color:#62B6E4;padding: 15px"><a href="#costModal" >Cost</a></h2>
+            <textarea id="cost" class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="What are your immediate fixed costs, immediate variable costs, and break-even point"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 10px 0px;">
+            <h2 style="color:#62B6E4;padding: 15px"><a href="#metModal" >Metrics</a></h2>
+            <textarea id="metrics"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="What will you use to measure success"></textarea>
+        </div>
+        <div class="col-sm-12" style="padding: 10px 0px 20px 0px;">
+            <h2 style="color:#62B6E4;padding: 15px"><a href="#advModal" >Advantage</a></h2>
+            <textarea id="advantage"  class="form-control margin-b-20" style="width: 750px" rows="5" placeholder="Identify what about your idea cannot be copied or bought"></textarea>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <div class="data-status animated fadeInDown"></div> <!-- data submit status -->
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <button id="submit-button"  class="btn btn-lg btn-skin btn-radius margin-b-20">Submit</button>
+        </div>
+    </div>
+</div>
+
+<!-- //modal section begins -->
+
+<div id="problemModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Problem</h2>
+        <p>What problem is your product intended to solve? Begin by indentifiying the problems your prospective customers currently face, and how your product would solve them. Include how your solution stands out from any current alternatives.</p>
+    </div>
+</div>
+<div id="custModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Customer</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+    </div>
+</div>
+<div id="valModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Unique Value Proposition</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+    </div>
+</div>
+<div id="solModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Solution</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+    </div>
+</div>
+<div id="chanModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Channels</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+    </div>
+</div>
+<div id="revModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Revenue</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+    </div>
+</div>
+<div id="costModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Cost</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+    </div>
+</div>
+<div id="metModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Metrics</h2>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+    </div>
+</div>
+<div id="advModal" class="modalDialog">
+    <div>
+        <a href="#close" title="Close" class="close">X</a>
+        <h2>Advantage</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pulvinar, quam non aliquet interdum, massa purus viverra eros, vel lacinia nibh odio ac ipsum. Maecenas mollis ullamcorper augue eu accumsan. Etiam at bibendum eros. Etiam sit amet velit diam. Nullam sed eleifend dolor. Morbi congue congue luctus.</p>
+
+    </div>
+</div>
+
+
+<!-- //modal section ends -->
+
+        <!--Submit End-->
+        <hr>
+ <% include partials/footer %>
+
+</body>
+
+
+</html>

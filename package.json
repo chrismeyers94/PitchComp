@@ -1,0 +1,30 @@
+{
+  "name": "pitchcompetition",
+  "version": "1.0.0",
+  "description": "Elevate Blue's Quarterly Pitch Competition",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elevateblue/pitchcompetition.git"
+  },
+  "author": "Elevate Blue",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "ejs": "*",
+    "express": "*",
+    "logfmt": "*",
+    "mobile-detect": "^1.3.2",
+    "nodemailer": "^2.4.2",
+    "nodemailer-sendgrid-transport": "*",
+    "underscore": "*",
+    "useragent": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/elevateblue/pitchcompetition/issues"
+  },
+  "homepage": "https://github.com/elevateblue/pitchcompetition#readme"
+}
